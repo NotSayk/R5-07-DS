@@ -1,0 +1,6 @@
+NOM Prénom
+Exécution du workflow : 19/11/2026 20:29:01
+----- Contenu de TOTO.txt -----
+Bonjour, ceci est TOTO
+----- Taille de TOTO.txt -----
+23 caractères, 1 lignes
