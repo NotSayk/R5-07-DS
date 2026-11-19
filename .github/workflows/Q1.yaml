@@ -1,0 +1,30 @@
+name: Q1
+on:
+  push:
+    paths:
+      - 'TOTO.txt'
+      - '.github/workflows/Q1.yaml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Copier TOTO.txt dans Q1_archive_TOTO.txt
+        run: |
+          cp TOTO.txt Q1_archive_TOTO.txt
+          cat Q1_archive_TOTO.txt
+
+      - name: Commit et push
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add Q1_archive_TOTO.txt
+          git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
+          git commit -m "Q1 : archive de TOTO.txt"
+          git pull --rebase
+          git push
