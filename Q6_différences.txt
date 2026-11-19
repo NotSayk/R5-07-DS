@@ -1,1 +1,9 @@
-Pas d'archive précédente (première exécution)
+diff Q6_archive_19-11-2026-204301.txt Q6_archive_19-11-2026-204358.txt
+13c13
+<             System.out.println();
+---
+>             System.out.println(); //Modif
+18c18
+< caractères : 452
+---
+> caractères : 460
