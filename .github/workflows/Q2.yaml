@@ -17,7 +17,7 @@ jobs:
       - name: Créer Q2_archive_TOTO.txt
         run: |
           export TZ=Europe/Paris
-          echo "NOM Prénom" > Q2_archive_TOTO.txt
+          echo "AMPEAU Samuel" > Q2_archive_TOTO.txt
           echo "Exécution du workflow : $(date '+%d/%m/%Y %H:%M:%S')" >> Q2_archive_TOTO.txt
           echo "----- Contenu de TOTO.txt -----" >> Q2_archive_TOTO.txt
           cat TOTO.txt >> Q2_archive_TOTO.txt
