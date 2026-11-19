@@ -6,8 +6,8 @@ public class Q5 {
         if (args.length > 0) {
             n = Integer.parseInt(args[0]);
         }
-        for (int ligne = 1; ligne <= n; ligne++) {   
-            for (int i = 1; i <= ligne; i++) {          
+        for (int ligne = n; ligne >= 1; ligne--) {
+            for (int i = 1; i <= ligne; i++) {
                 System.out.print(i + " ");
             }
             System.out.println();
