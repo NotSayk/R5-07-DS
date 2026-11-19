@@ -8,7 +8,7 @@ public class Q6 {
             for (int i = 1; i <= ligne; i++) {
                 System.out.print("x ");                 // issue #2 : x au lieu des chiffres
             }
-            System.out.println();
+            System.out.println(); //Modif
         }
     }
 }
